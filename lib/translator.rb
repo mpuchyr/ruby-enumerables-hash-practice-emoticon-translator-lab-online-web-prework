@@ -11,6 +11,7 @@ def load_library(file)
   
   emoticons.reduce({}) do |memo, (key, value)|
     emote_translator[:get_meaning][value[1]] = key
+    emote_translator[:get_emoticon][key] = value[0]
   end
   
   emote_translator
