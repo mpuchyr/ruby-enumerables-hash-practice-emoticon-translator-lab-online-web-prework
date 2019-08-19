@@ -8,6 +8,10 @@ def load_library(file)
     :get_meaning => {},
     :get_emoticon => {}
   }
+  
+  emoticons.reduce({}) do |memo, (key, value)|
+    emoe_translator
+  end
 end
 
 def get_japanese_emoticon
